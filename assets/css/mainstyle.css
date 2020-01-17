@@ -1,0 +1,208 @@
+/* custom  style */
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .nav-trigger .bar {
+    background-color: #fff !important;
+}
+
+.nav-trigger.collapsed.style-mobile .bar:nth-child(2) {
+    width: 20px;
+}
+
+ .bar { 
+	height: 3px !important;
+	width: 24px !important; 
+}
+
+.nav-trigger.style-mobile .bars {
+	height: 19px !important;
+}
+
+.nav-trigger.style-mobile .bar:nth-child(2) {
+	margin-right: 0px !important;
+}
+
+.nav-trigger.style-mobile .bar {
+	border-radius: 0px !important;
+}
+
+.mainheader {
+    background-color: #0000ff;
+}
+
+.mainheader img {
+    padding-top: 20px;
+}
+
+.mainheader button {
+    padding-top: 20px;
+}
+
+.bar  {
+    height: 3px !important;
+    width: 24px !important;
+}
+
+.d-flex-wrap {
+    background-color: #0000ff;
+}
+
+ ul.nav.main-nav > li > a {
+    -webkit-box-pack: left;
+    justify-content: left !important; 
+
+}
+
+
+
+.visible-xs {
+    @media (max-width: @screen-phone-max) {
+    .responsive-visibility();
+    }  
+    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+      .responsive-invisibility();
+    }
+    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+      .responsive-invisibility();
+    }
+    @media (min-width: @screen-large-desktop) {
+      .responsive-invisibility();
+    }
+  }
+  .visible-sm {
+    @media (max-width: @screen-phone-max) {
+    .responsive-invisibility();
+    }
+    &.visible-xs {
+      @media (max-width: @screen-phone-max) {
+        .responsive-visibility();
+      }    
+    }
+    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+      .responsive-visibility();
+    }
+    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+      .responsive-invisibility();
+    }
+    @media (min-width: @screen-large-desktop) {
+      .responsive-invisibility();
+    }
+  }
+  .visible-md {
+    @media (max-width: @screen-phone-max) {  
+    .responsive-invisibility();
+    }
+    &.visible-xs {
+      @media (max-width: @screen-phone-max) {  
+        .responsive-visibility();
+      }    
+    }
+    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+      .responsive-invisibility();
+    }
+    &.visible-sm {
+      @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+        .responsive-visibility();
+      }    
+    }
+    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+      .responsive-visibility();
+    }
+    @media (min-width: @screen-large-desktop) {
+      .responsive-invisibility();
+    }
+  }
+  .visible-lg {
+    @media (max-width: @screen-phone-max) {
+    .responsive-invisibility();
+    }
+    &.visible-xs {
+      @media (max-width: @screen-phone-max) {
+        .responsive-visibility();
+      }    
+    }
+    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+      .responsive-invisibility();
+    }
+    &.visible-sm {
+      @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+        .responsive-visibility();
+      }    
+    }
+    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+      .responsive-invisibility();
+    }
+    &.visible-md {
+      @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+        .responsive-visibility();
+      }    
+    }
+    @media (min-width: @screen-large-desktop) {
+      .responsive-visibility();
+    }
+  }
+  
+  
+  .navbar-header:only-child {
+  
+      -webkit-box-flex: 0 !important;
+      flex: none;
+  
+  }
+  
+  .navbar-header {
+  
+      padding-left: 0px;“    -webkit-box-pack: none !important;
+      justify-content: none !important;
+  
+  }
+  
+  button.nav-trigger {‘
+  
+      position: relative !important;
+      float: right !important;
+     
+      background-color !important: 
+  
+  transparent !important;
+  
+  background-image: none !important;
+  
+  border: 1px solid
+  
+      transparent !important;
+      border-radius: 4px !important;
+  
+  }
+  
+  .inline-nav > li + li {
+  
+      margin-left: 3px !important;
+      text-align: right !important; 
+  
+  }
+  
+
+.formtext a{
+    font-size: 20px;
+    color:#fff;
+    font-family: poppins;
+    font-weight: bolder;
+}
+
+.nextbutton, .prevbutton, .arrow{
+    font-size: 18px !important;
+	border: 0px !important;
+    color: #fff;
+    background-color: #0000ff;
+    font-weight: bold !important;
+	width: 100%;
+	padding-top: 50px !important;
+    font-family: poppins;
+    
+}
+
