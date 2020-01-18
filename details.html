@@ -95,13 +95,84 @@
          <!--main body section-->
          <section>
             <div class="container-fluid">
-                <div class="row d-flex-wrap align-items-center"> 
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  mt-200 mb-40 ">
-                        
+                <div class="container">
+                    <div class="row d-flex-wrap align-items-center  mt-50 mb-10"> 
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 details mb-30" style="background-image: url(assets/img/uploads/upload2.png);">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                <div class="lqd-column text-left " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'> 
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                                        <h1 class="detailshead">I</h1>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 nopadding mt-60">
+                                        <div id="printchatbox"></div>
+                                        <p class="detailstext text-center">name</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                <div class="lqd-column text-left" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
+                                    <h1 class="detailshead">AM</h1 class="detailshead">
+                                </div>
+                            </div>
+
+                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                 <div class="lqd-column text-left " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
+                                    <h1 class="detailshead">VOCAL</h1>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                <div class="lqd-column text-left " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
+                                    <h1 class="detailshead">ABOUT</h1>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                <div class="lqd-column text-left " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-20">
+                                        <div id="printchatbox1"></div>
+                                        <p class="detailstext text-center">what are you vocal about?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                            <form action="">
+                                <div class="formgroup lqd-column text-left " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
+                                    <input type="text" maxlength="13" name="yourname" id="yourname" placeholder="NAME" onkeyup="annotate()">
+                                </div>
+                                <div class="formgroup mt-15 lqd-column text-left " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
+                                    <select  name="yourcause" id="yourcause" onChange="outputValue(this)">
+                                        <option value="">CAUSE</option>
+                                        <option value="Social Injustice">Social Injustice</option>
+                                        <option value="Health">Health</option>
+                                        <option value="Design">Design</option>
+                                    </select>
+                                </div>
+                                <div class="formgroup mt-20 lqd-column text-left " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
+                                    <label for="text">TELL US MORE</label>
+                                    <textarea name="tellmore" id="tellmore" cols="30" rows="3"></textarea>
+                                </div>
+                                <div style="overflow:auto;" class="lqd-column text-center text-md-center" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>
+                                    <div class="container-fluid nopadding">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  nopadding">
+                                           <div class="formtext col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <!--<button type="button" class="nopadding text-left prevbutton" id="prevBtn"><a href="upload.html"><i style="font-weight: bolder;" class="fa fa-angle-left"></i>PREVIOUS</a></button>-->
+                                            </div>
+                                           
+                                            <div class="formtext col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+                                                <button type="button" class=" nopadding text-right nextbutton" id="nextBtn"><a href="section2.html">NEXT<i style="font-weight: bolder;" class="fa fa-angle-right"></i></a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!--main body section end-->
 
          <!--footer section-->
          <footer class="main-footer bg-charade pt-10" data-sticky-footer="true">
@@ -130,6 +201,18 @@
     <script src="./assets/js/theme-vendors.js"></script>
     <script src="./assets/js/theme.min.js"></script>
     <script src="./assets/js/jquery-2.2.1.min.js"></script>
+    
+    <script>
+        function annotate(){
+        var typed= document.getElementById("yourname").value;
+        document.getElementById("printchatbox").innerHTML= typed;
+        }
+    </script>
+    <script>
+        function outputValue(item) {
+            document.getElementById('printchatbox1').innerHTML = item.value;
+        }
+    </script>
 
 </body>
 </html>

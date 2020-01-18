@@ -190,7 +190,7 @@
 .formtext a{
     font-size: 20px;
     color:#fff;
-    font-family: poppins;
+    font-family: gilroy-regular;
     font-weight: bolder;
 }
 
@@ -201,8 +201,83 @@
     background-color: #0000ff;
     font-weight: bold !important;
 	width: 100%;
-	padding-top: 50px !important;
-    font-family: poppins;
+	padding-top: 10px !important;
+    font-family: gilroy-regular;
+}
+
+#printchatbox, #printchatbox1 {
+    border: 0 none;
+    border-bottom: dashed 7px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-color: #fff;
+    color: #fff;
+    font-family: Gilroy-black;
+    font-size: 7vw;
     
 }
 
+#printchatbox1 {
+  font-size: 40px !important;
+}
+
+.detailshead{
+    color: #fff !important;
+    font-weight: bolder !important;
+    font-size: 87px ;
+    font-family: Gilroy-Black !important;
+    margin-bottom:0px !important;
+    padding: 0px !important;
+}
+
+.detailstext{
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Gilroy-Bold;
+}
+
+.details{
+   background-repeat: no-repeat;
+   background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color:#0000ff;
+    background-blend-mode: multiply;
+}
+.formgroup input{
+  width: 100%;
+  color: #0000ff !important;
+}
+
+.formgroup input::placeholder, .lqd-unit-animation-done{
+  color: #0000ff;
+  padding-left: 10px;
+  font-family: gilroy-regular;
+  padding: 5px !important;
+}
+
+.ui-selectmenu-text, .ui-menu-item-wrapper, .ui-state-active{
+  color: #0000ff !important;
+  font-family:gilroy-regular;
+  padding: 5px;
+}
+.ui-selectmenu-button.ui-button {
+  text-align: left;
+  width: 100% !important;
+}
+
+.ui-corner-all {
+  border-radius: 0px !important;
+}
+
+.formgroup textarea {
+  width: 100%;
+}
+.formgroup label{
+  color: #fff;
+  font-family: gilroy-regular;
+  font-size: 18px;
+  margin-bottom: 0px !important;
+}
