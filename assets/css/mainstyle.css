@@ -5,6 +5,18 @@
     margin: 0 !important;
  }
 
+ .container-fluid {
+   width: 375px !important;
+   margin: 0 auto !important;
+   overflow: hidden !important;
+ }
+
+ .container{
+  width: 375px !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
+
  .nav-trigger .bar {
     background-color: #fff !important;
 }
@@ -280,4 +292,38 @@
   font-family: gilroy-regular;
   font-size: 18px;
   margin-bottom: 0px !important;
+}
+
+.details2 h1 {
+  font-family: Gilroy-Black;
+  font-size: 14.5vw;
+  font-weight: bolder;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.details2 input{
+  width: 85%;
+  background-color: #0000ff ;
+  border: 0 none;
+  border-bottom: dashed 7px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-color: #fff;
+  color: #fff;
+}
+
+.details2 p{
+  font-family: gilroy-regular;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px ;
+  margin-bottom: 0PX;
+}
+
+.details2 a{
+  font-family: gilroy-bold;
+  color: #fff;
 }
