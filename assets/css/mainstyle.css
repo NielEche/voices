@@ -5,9 +5,14 @@
     margin: 0 !important;
  }
  
+ @media (max-width: 360px) {
+  .container-fluid {
+    width: 100% !important;
+  }
+}
 
  .container-fluid {
-   width:360px !important;
+   width:375px ;
    margin: 0 auto !important;
    overflow: hidden !important;
  }
@@ -302,7 +307,7 @@
 
 .details2 h1 {
   font-family: Gilroy-Black;
-  font-size: 55px;
+  font-size: 54px;
   font-weight: bolder;
   color: #fff;
   margin-bottom: 0px;
@@ -366,4 +371,40 @@
   max-height: 100% !important;
 }
 
+.joinvoices h1{
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 34px !important;
+  text-align: left;
+  margin: 0px !important;
+}
 
+.joinvoices h3{
+  color: #fff;
+  font-family: gilroy-bold;
+  font-size: 20px !important;
+  text-align: center;
+  margin: 0px !important;
+}
+
+.joinvoices p {
+  color: #fff;
+  font-family: gilroy-bold;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.logintext {
+  text-align: center !important;
+  font-size: 12px !important;
+  font-family: gilroy-black;
+}
+
+.logintext span {
+  font-size: 14px !important;
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid #fff !important;
+} 
