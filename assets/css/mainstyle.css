@@ -215,6 +215,7 @@
 	width: 100%;
 	padding-top: 10px !important;
     font-family: gilroy-regular;
+    outline: none;
 }
 
 #printchatbox, #printchatbox1 {
@@ -227,7 +228,7 @@
     color: #fff;
     font-family: Gilroy-black;
     font-size: 7vw;
-    
+    position: sticky;
 }
 
 #printchatbox1 {
@@ -250,6 +251,7 @@
     font-family: Gilroy-Bold;
 }
 
+
 .details{
    background-repeat: no-repeat;
    background-size: cover;
@@ -261,6 +263,7 @@
 .formgroup input{
   width: 100%;
   color: #0000ff !important;
+  outline: none;
 }
 
 .formgroup input::placeholder, .lqd-unit-animation-done{
@@ -278,6 +281,7 @@
 .ui-selectmenu-button.ui-button {
   text-align: left;
   width: 100% !important;
+  outline: none;
 }
 
 .ui-corner-all {
@@ -286,6 +290,7 @@
 
 .formgroup textarea {
   width: 100%;
+  outline: none;
 }
 .formgroup label{
   color: #fff;
@@ -312,6 +317,7 @@
   border-left-style: hidden;
   border-color: #fff;
   color: #fff;
+  outline: none;
 }
 
 .details2 p{
@@ -326,4 +332,35 @@
 .details2 a{
   font-family: gilroy-bold;
   color: #fff;
+}
+
+.carousel-item-inner {
+  margin-bottom: 10px !important;
+}
+
+.sharebutton{
+  color: #fff;
+  font-size: 20px;
+  background-color: #0000ff;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Gilroy-Black;
+  border:solid 3px;
+  outline: none;
+}
+
+.preview h4 {
+  color: #fff;
+  font-family: Gilroy-Black;
+  font-weight: bolder;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.nav-trigger.scheme-light.fill-solid .bars {
+  background-color: #0000ff !important;
+}
+
+.lity-container {
+  max-height: 100% !important;
 }
