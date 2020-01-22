@@ -4,9 +4,12 @@
     padding: 0 !important;
     margin: 0 !important;
  }
+ 
+
+
 
  .container-fluid {
-   width: 375px !important;
+   width:360px !important;
    margin: 0 auto !important;
    overflow: hidden !important;
  }
@@ -364,3 +367,5 @@
 .lity-container {
   max-height: 100% !important;
 }
+
+
