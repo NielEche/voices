@@ -379,12 +379,16 @@
   margin: 0px !important;
 }
 
-.joinvoices h3{
-  color: #fff;
+.joinvoices h3 {
+  color: #fff !important;
   font-family: gilroy-bold;
   font-size: 20px !important;
   text-align: center;
   margin: 0px !important;
+}
+
+.joinvoices a {
+  color: #fff !important;
 }
 
 .joinvoices p {
@@ -400,11 +404,148 @@
   font-family: gilroy-black;
 }
 
-.logintext span {
-  font-size: 14px !important;
+.logintext a {
+  font-size: 16px !important;
   text-decoration: underline;
+  color: #fff;
 }
 
 hr {
   border: 1px solid #fff !important;
-} 
+}
+
+.socialsection {
+  background-color: #fff;
+  border: 2px;
+  border-radius: 27px ;
+  
+}
+
+.socialsection h1{
+  text-align: right;
+  font-family: gilroy-regular;
+  font-size: 19px !important;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.socialsection a{
+  position: relative;
+}
+
+.signupform {
+  background-repeat: no-repeat;
+   background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.form-group label {
+  position: relative;
+  color: #fff;
+  font-family: gilroy-regular;
+  margin: 0px;
+}
+
+.form-group input{
+  width: 100%;
+  color: #0000ff;
+  font-family: gilroy-bold;
+  outline: none;
+  padding: 7px;
+}
+
+
+.form-group .ui-selectmenu-text, .ui-menu-item-wrapper, .ui-state-active {
+  font-family: gilroy-bold !important;
+}
+
+.signupbtn {
+  text-align: center;
+  color: #fff;
+  font-family: gilroy-bold;
+  background-color: #0000ff;
+  border: 0px;
+  padding: 7px;
+}
+
+.loginbtn {
+  color: #0000ff;
+  font-family: gilroy-bold;
+  background-color: #fff;
+  border: 0px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.form-group1 input {
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: gilroy-bold, FontAwesome;
+}
+
+.form-group1 a {
+  color: #fff;
+  font-family: gilroy-bold;
+  margin-top: 5px;
+}
+
+.form-group1 input::placeholder{
+  color: #fff;
+  font-family: gilroy-bold, FontAwesome;
+  font-size: 19px;
+}
+
+.loginoption h3 {
+  position: relative;
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 18px;
+}
+
+.loginoption h5 {
+  color: #fff;
+  font-family: gilroy-regular;
+  font-size: 16px;
+}
+
+.loginoption a{
+  color: #ffffff;
+  font-family: gilroy-black;
+  font-weight: bolder;
+}
+
+
+@media screen and (min-width: 1200px){
+.main-nav {
+  display: block !important;
+  flex: 1 auto !important;
+  text-align: left !important;
+}
+.txt {
+  text-align: left !important;
+  width: 100%;
+}
+  .main-nav  a{
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .main-nav-hover-underline-2 > li > a .link-ext {
+    display: none !important;
+  }
+ }
+
+ .profileimage {
+  
+ }
