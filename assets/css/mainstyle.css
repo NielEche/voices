@@ -546,6 +546,381 @@ hr {
   }
  }
 
- .profileimage {
-  
+ 
+ .profileimage{
+  object-fit: cover;
+  border-radius: 50%;
+  height: 115px;
+  width: 115px;
  }
+
+ .image-upload>input {
+  display: none !important;
+ }
+ 
+ #snap {
+  color: #fff;
+  font-family:gilroy-bold;
+  padding: 0px !important;
+  text-align: left !important;
+ }
+ 
+ #choosefile {
+  font-size: 20px;
+  color: #fff !important;
+  font-family: gilroy-regular;
+  font-weight: bolder;
+}
+
+.voicesout h3{
+  position: relative;
+  color:#fff;
+  font-family: gilroy-black;
+  text-align: left;
+  font-weight: bolder;
+  padding: 0px !important;
+}
+
+.voicess h4 {
+  color: #fff;
+  font-family: gilroy-black;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: left;
+  margin: 0px !important;
+  padding: 0px;
+  line-height: 0.7;
+}
+
+.voicess h5 {
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 8px;
+  text-align: center;
+  margin:0px !important;
+  padding: 0px;
+  line-height: 0.9;
+}
+
+.voicess {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.voicess3 {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.voicess3 h5 {
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 8px;
+  text-align: center;
+  margin:0px !important;
+  padding: 0px;
+  line-height: 0.9;
+}
+
+.voicess3 a {
+  color: #fff;
+font-size: 7px;
+font-family: gilroy-bold;
+  text-align: center !important;
+  border-width: 2px;
+  border-color: #fff;
+  border-style: solid;
+  padding: 2px !important;
+  background: none !important;
+}
+
+.voicess a {
+  color: #fff;
+font-size: 7px;
+font-family: gilroy-bold;
+  text-align: center !important;
+  border-width: 2px;
+  border-color: #fff;
+  border-style: solid;
+  padding: 2px !important;
+  background: none !important;
+}
+
+.preview {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+   background-blend-mode: multiply;
+   background-color:#0000ff;
+   background-blend-mode: multiply;
+}
+
+.voicess2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.voicess2 h1{
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 35px;
+  font-weight: bolder;
+  margin: 0px !important;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.voicess2 span {
+  font-family: gilroy-regular !important;
+  font-weight: lighter;
+  text-transform: uppercase !important;
+}
+
+.voicess2 P {
+  font-family: gilroy-black !important;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+
+.voicesout button{
+  color:#fff;
+  background-color:#0000ff ;
+  margin-top: 20px;
+  font-family: gilroy-black;
+}
+
+.supportbtn {
+  color: #0000ff !important;
+  background-color: #fff !important;
+}
+
+#regForm {
+  background-color: #0000ff;
+ 
+  width: 100%;
+  min-width: 300px;
+  z-index: 100;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+
+.profile h1{
+  color: #0000ff;
+  font-family: gilroy-bold;
+  font-size: 25px;
+  margin: 0px !important;
+}
+
+.profile h2 {
+  color: rgb(92, 92, 92);
+  font-family: gilroy-bold;
+  font-size: 17px;
+  margin: 0px !important;
+  padding-top: 5px;
+}
+
+.profile h4{
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 17px;
+  margin: 0px !important;
+  text-align: center !important;
+  padding: 0px !important;
+}
+
+.profile h5 {
+  color:#fff;
+  font-family: gilroy-black;
+  font-size: 9px;
+  margin: 0px !important;
+  padding-top: 2px;
+  text-align: center !important;
+  padding: 0px !important;
+}
+
+.profile p{
+  font-family: gilroy-regular;
+  font-size: 12px;
+  width: 100%;
+  color: rgb(54, 54, 54);
+  margin-bottom: 5px !important;
+  padding: 0px !important;
+  line-height: 1.1;
+}
+
+
+.profile a{
+  font-family: gilroy-bold;
+  font-size: 15px;
+  width: 100%;
+  color:#0000ff;
+  margin-bottom: 5px !important;
+  padding: 0px !important;
+  line-height: 1.1;
+}
+
+.profile2 p{
+  font-family: gilroy-regular;
+  font-size: 10px;
+  width: 100%;
+  color: rgb(54, 54, 54);
+  margin-top: 3px !important;
+  padding: 0px !important;
+}
+
+.profile2 span{
+  font-family: gilroy-bold;
+  font-size: 11px;
+  width: 100%;
+  color: #0000ff;
+  margin-bottom: 5px !important;
+  padding: 0px !important;
+  line-height: 1.1;
+}
+
+.editprofile label{
+  color: #0000ff;
+  font-family: gilroy-regular;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.editprofile input  {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline:none;
+  border-color: rgb(202, 201, 201);
+  border-width: 1px !important;
+  color: #0000ff;
+}
+
+
+.editaccount label{
+  color: #fff;
+  font-family: gilroy-regular;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.editaccount input  {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline:none;
+  background-color: #0000ff !important;
+  border-color: rgb(202, 201, 201);
+  border-width: 1px !important;
+  color: #fff;
+
+}
+
+.editprofile span {
+  border-top: none !important;
+  background-color: #fff !important ;
+  border-left: none;
+  border-right: none;
+
+}
+
+.editprofile textarea{
+  background-color: rgb(240, 240, 240);
+  border: none !important;
+  width: 100%;
+  color: #0000ff;
+  outline: none;
+}
+
+#editprofilebtn{
+  color: #fff;
+  background-color: #0000ff;
+  font-family: gilroy-black;
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#editaccountbtn, #deactivatebtn, #deletebtn{
+  color: #0000ff;
+  background-color: #fff;
+  font-family: gilroy-black;
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.editaccount h1{
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 16px ;
+}
+
+.editaccount p{
+  color: #fff;
+  font-family: gilroy-regular;
+  font-size: 15px ;
+}
+
+.profilepage {
+  height: 280px !important;
+}
+
+.profilepage2 {
+  height: 280px !important;
+}
+
+.profile2{
+  color: #fff !important;
+}
+
+.support h1 {
+  color: #fff;
+  font-family: gilroy-black;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.aboutus h1 {
+  color: #0000ff;
+  font-family: gilroy-black;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.aboutus p {
+  color: #0000ff;
+  font-family: gilroy-regular;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+.aboutus h3 {
+  color: #0000ff;
+  font-family: gilroy-black;
+  font-size: 20px;
+  font-weight: bolder;
+}

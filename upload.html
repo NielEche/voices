@@ -47,7 +47,7 @@
                         <div style="background-color:#fff !important;" class="collapse  navbar-visible-ontoggle collapsed" id="main-header-collapse">
                             <ul class="main-nav main-nav-hover-underline-2 nav align-items-lg-stretch justify-content-lg-end" data-submenu-options='{"toggleType":"fade","handler":"mouse-in-out"}'>
                                 <li class="current-menu-item">
-                                    <a href="index.html">
+                                    <a href="about.html">
                                         <span class="link-ext"></span>
                                         <span class="txt">ABOUT US</span>
                                     </a>
@@ -59,7 +59,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="voiceout.html">
                                         <span class="link-ext"></span>
                                         <span class="txt">VOICE OUT</span>
                                     </a>
@@ -102,10 +102,8 @@
                                             <a href="#modal-2" class="font-weight-medium" data-lity="#modal-2">
                                                 <span>
                                                     <img src="assets/img/icon/camera.png">
-                                              
-                                    
+                                                </span>
                                 
-                                           
                                                 <span style="margin-top: 20px !important;">
                                                     <img src="assets/img/icon/selectfile.png"></button>
                                                 </span>
@@ -113,44 +111,50 @@
                                     </div>
                            </form>
                         </div>
+                       
                         <div id="modal-2" style="height: 100% !important;" class="lqd-modal lity-hide">
                             <div style="background-color: #0000ff !important; height: 100%;" class="lqd-modal-inner">
                                 <div class="lqd-modal-head"></div><!-- /.lqd-modal-head -->
-                                <div class="lqd-modal-content">
+                                <div class="lqd-modal-content mt-110 mb-110">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt-100 mb-120">
                                             <form action="#" style="width: 100%;">
                                                 <div class="lqd-column text-center text-md-center" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>
-                                                    
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-70 nopadding">
-                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
-                                                                <div style="margin-top: 10px !important;" class="formtext">
-                                                                    <a href="">
-                                                                        <img src="assets/img/icon/cameraupload.png"><br>
-                                                                    CAMERA
-                                                                    </a>
-                                                                </div>
+                                                   
+                                                <div class="row d-flex flex-wrap align-items-center">
+                                                    <div class="lqd-column col-md-3 col-xs-6 text-center">
+                                                        <div style="margin-top: 10px !important;" class="formtext">
+                                                            <a href="#modal-3" data-lity="#modal-3">
+                                                                <img src="assets/img/icon/cameraupload.png"><br>
+                                                            CAMERA
+                                                            </a>
+                                                        </div>   
+                                                    </div>
+                                                    <div class="lqd-column col-md-3 col-xs-6 text-center">
+                                                        <div style="margin-top: 10px !important;" class="formtext">
+                                                            <div class="image-upload">
+                                                                <label for="file-input">
+                                                                    <img src="assets/img/icon/folder.png"/>
+                                                                    <a>IMG FOLDER</a>
+                                                                </label>
+                                                                <input id="file-input" accept="image/*" onchange="loadFile(event)" type="file" />
                                                             </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
-                                                                <div style="margin-top: 10px !important;" class="formtext">
-                                                                    <a href="">
-                                                                        <img src="assets/img/icon/folder.png"><br>
-                                                                    IMG FOLDER
-                                                                    </a>
-                                                                </div>
-                                                            </div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+                                                <div class="row d-flex flex-wrap align-items-center">
+                                                     <img  id="output" /> 
+                                                </div>
+                                                </div>
+
                                                 <div class="lqd-column text-center text-md-center " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
-                                                    <div class="formtext ">
-                                                        <a href="#">
+                                                    <div class="formtext mt-100">
+                                                        <button type="submit" id="choosefile" name="choosefile">
+                                                            <a href="#">
                                                             CHOOSE FILE
-                                                        </a>
+                                                            </a>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -164,6 +168,30 @@
 
                             </div><!-- /.lqd-modal-inner -->
                         </div><!-- /.lqd-modal -->
+
+                        <div id="modal-3" style="height: 100% !important;" class="lqd-modal lity-hide">
+                            <div style="background-color: #0000ff !important; height: 100%;" class="lqd-modal-inner">
+                                <div class="lqd-modal-head"></div><!-- /.lqd-modal-head -->
+                                <div class="lqd-modal-content mt-110 mb-110">
+                                    
+                                        <div class="lqd-column text-center text-md-center " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>  
+                                            <video id="video" width="100%" height="100%" autoplay></video>
+                                            <button id="snap">Take Picture</button>
+                                            <canvas id="canvas" width="311" height="233" style="width: 100%;"></canvas>
+                                        </div>
+                                      
+                                        <div class="lqd-column text-center text-md-center " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
+                                            <div class="formtext mt-10">
+                                                <button type="submit" id="choosefile" name="choosefile">
+                                                    CHOOSE FILE
+                                                </button>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="lqd-modal-foot"></div><!-- /.lqd-modal-foot -->
+                            </div>
+                        </div>
+                        
 
                     </div>
                 </div>
@@ -196,5 +224,36 @@
         <script src="./assets/js/theme-vendors.js"></script>
         <script src="./assets/js/theme.min.js"></script>
         <script src="./assets/js/jquery-2.2.1.min.js"></script>
+        <script>
+            var loadFile = function(event) {
+              var output = document.getElementById('output');
+              output.src = URL.createObjectURL(event.target.files[0]);
+            };
+          </script>
+          <script>
+              // Grab elements, create settings, etc.
+var video = document.getElementById('video');
+
+// Get access to the camera!
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Not adding `{ audio: true }` since we only want video now
+    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+        //video.src = window.URL.createObjectURL(stream);
+        video.srcObject = stream;
+        video.play();
+    });
+}
+
+// Elements for taking the snapshot
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+var video = document.getElementById('video');
+
+// Trigger photo take
+document.getElementById("snap").addEventListener("click", function() {
+	context.drawImage(video, 0, 0, 311, 233);
+});
+
+          </script>
     </body>
 </html>
