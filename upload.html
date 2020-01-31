@@ -122,7 +122,7 @@
                                                 <div class="lqd-column text-center text-md-center" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>
                                                    
                                                 <div class="row d-flex flex-wrap align-items-center">
-                                                    <div class="lqd-column col-md-3 col-xs-6 text-center">
+                                                    <div class="lqd-column col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
                                                         <div style="margin-top: 10px !important;" class="formtext">
                                                             <a href="#modal-3" data-lity="#modal-3">
                                                                 <img src="assets/img/icon/cameraupload.png"><br>
@@ -130,11 +130,11 @@
                                                             </a>
                                                         </div>   
                                                     </div>
-                                                    <div class="lqd-column col-md-3 col-xs-6 text-center">
+                                                    <div class="lqd-columncol-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
                                                         <div style="margin-top: 10px !important;" class="formtext">
                                                             <div class="image-upload">
                                                                 <label for="file-input">
-                                                                    <img src="assets/img/icon/folder.png"/>
+                                                                    <img src="assets/img/icon/folder.png"/><br>
                                                                     <a>IMG FOLDER</a>
                                                                 </label>
                                                                 <input id="file-input" accept="image/*" onchange="loadFile(event)" type="file" />
@@ -150,7 +150,7 @@
 
                                                 <div class="lqd-column text-center text-md-center " data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"1500","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>          
                                                     <div class="formtext mt-100">
-                                                        <button type="submit" id="choosefile" name="choosefile">
+                                                        <button style="background-color: #0000ff; border: none !important;" type="submit" id="choosefile" name="choosefile">
                                                             <a href="#">
                                                             CHOOSE FILE
                                                             </a>
@@ -224,36 +224,8 @@
         <script src="./assets/js/theme-vendors.js"></script>
         <script src="./assets/js/theme.min.js"></script>
         <script src="./assets/js/jquery-2.2.1.min.js"></script>
-        <script>
-            var loadFile = function(event) {
-              var output = document.getElementById('output');
-              output.src = URL.createObjectURL(event.target.files[0]);
-            };
-          </script>
-          <script>
-              // Grab elements, create settings, etc.
-var video = document.getElementById('video');
-
-// Get access to the camera!
-if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    // Not adding `{ audio: true }` since we only want video now
-    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-        //video.src = window.URL.createObjectURL(stream);
-        video.srcObject = stream;
-        video.play();
-    });
-}
-
-// Elements for taking the snapshot
-var canvas = document.getElementById('canvas');
-var context = canvas.getContext('2d');
-var video = document.getElementById('video');
-
-// Trigger photo take
-document.getElementById("snap").addEventListener("click", function() {
-	context.drawImage(video, 0, 0, 311, 233);
-});
-
-          </script>
+        <script src="assets/js/imgfolder.js"></script>
+        <script src="assets/js/cameraupload.js"></script>
+    
     </body>
 </html>

@@ -2,7 +2,7 @@
 * made the corrections to the preview page, so its no longer just an image , but the image as the background and text fields on it
 
 # The sign up page 
-* corrected the background color of the header for then signup page , so it blends now 
+* corrected the background color of the header for the signup page , so it blends now 
 
 # The login page 
 * corrected the background color of the header here tooo
@@ -12,4 +12,4 @@
 - Profile edit page , editprofile.html
 - voice out page, voicesout.html
 - Support other people voices, supportvoices.html
-- About us pagre , about.html
+- About us page , about.html

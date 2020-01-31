@@ -4,6 +4,14 @@
     padding: 0 !important;
     margin: 0 !important;
  }
+
+ .alert{
+   position: absolute;
+   width: 50%;
+   z-index: 100;
+  left: 175px;
+ }
+
  
  @media (max-width: 360px) {
   .container-fluid {
@@ -288,6 +296,8 @@
   text-align: left;
   width: 100% !important;
   outline: none;
+  background-color: #fff !important;
+  border: none !important;
 }
 
 .ui-corner-all {
@@ -307,7 +317,7 @@
 
 .details2 h1 {
   font-family: Gilroy-Black;
-  font-size: 54px;
+  font-size: 42px;
   font-weight: bolder;
   color: #fff;
   margin-bottom: 0px;
@@ -454,6 +464,7 @@ hr {
   color: #0000ff;
   font-family: gilroy-bold;
   outline: none;
+  border: none;
   padding: 7px;
 }
 
@@ -554,6 +565,55 @@ hr {
   width: 115px;
  }
 
+ .container3 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image2 {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 13px;
+  right: 0;
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: gray;
+}
+
+.container3:hover .overlay {
+  opacity: 1;
+}
+
+.icon2 {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+.editimage {
+  position: relative;
+  width: 100%;
+}
+
  .image-upload>input {
   display: none !important;
  }
@@ -602,12 +662,37 @@ hr {
   line-height: 0.9;
 }
 
+.voicess h1 {
+  text-align: left;
+  margin:0px;
+  font-size: 15px;
+  font-family: gilroy-black;
+  color: #fff;
+ text-transform: uppercase;
+}
+
+.voicess span {
+  font-weight: lighter !important;
+  font-family: gilroy-regular;
+}
+
 .voicess {
   position: absolute;
-  top: 90%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+
+.recentvoicess{
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+   background-blend-mode: multiply;
+   background-color:#0000ff;
+   background-blend-mode: multiply;
 }
 
 .voicess3 {
@@ -704,6 +789,12 @@ font-family: gilroy-bold;
 .supportbtn {
   color: #0000ff !important;
   background-color: #fff !important;
+  outline: none !important;
+  text-decoration: none;
+}
+
+.supportbtn a {
+  color: #0000ff !important;
 }
 
 #regForm {
@@ -862,7 +953,7 @@ font-family: gilroy-bold;
   padding-bottom: 5px;
 }
 
-#editaccountbtn, #deactivatebtn, #deletebtn{
+#editaccountbtn, #deactivatebtn, #deletebtn , #resetpasswordbtn{
   color: #0000ff;
   background-color: #fff;
   font-family: gilroy-black;
@@ -923,4 +1014,126 @@ font-family: gilroy-bold;
   font-family: gilroy-black;
   font-size: 20px;
   font-weight: bolder;
+}
+
+.forgetpass h1 {
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.forgetpass hr {
+  width: 15%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.forgetpass p {
+  color: #fff;
+  font-family: gilroy-bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+.forgetpass input {
+  width: 100%;
+  color: #0000ff;
+  outline: none;
+}
+
+.forgetpass button {
+  color: #000;
+  background-color: #fff;
+  font-family: gilroy-bold;
+  font-weight: lighter;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.forgetpass button:hover {
+  background-color: #0000ff;
+  border-color: #fff;
+  color: #fff;
+  border-width: 2px;
+}
+#wrap {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ 
+a {
+  cursor: pointer !important;
+}
+
+.likebtn i {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 2rem;
+  transition: .4s;
+}
+
+.likebtn:hover i {
+  color: #f50057;
+}
+
+i.fas {
+  color: #f50057;
+  transition: .4s;
+}
+
+.checkmark {
+  position: absolute;
+  top: 1000;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }

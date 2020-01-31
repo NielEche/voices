@@ -22,11 +22,15 @@
 <body style="background-color: #0000ff;" data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="center"
     data-mobile-nav-style="classic" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray"
     data-mobile-nav-breakpoint="1199">
-    <div id="wrap">
+    <div style="background-image: url(assets/img/background/join.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;" id="wrap" class="container-fluid nopadding">
         <!--Page header-->
         <header> 
             <div class="mainbar-wrap container-fluid nopadding">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainheader">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainheader" style="background-color: transparent !important;">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <a href="index.html"><img src="assets/img/logo/iamvocallogo.png" alt=" iamvocal logo"></a>
                     </div>
@@ -38,7 +42,7 @@
                         <!--<button style="margin-bottom: 30px !important;" type="button" class="navbar-toggle collapsed nav-trigger style-mobile "
                          data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>-->
                             <span class="sr-only">Toggle Navigation</span>
-                            <span class="bars">
+                            <span class="bars" style="background-color: transparent !important;">
                                 <span class="bar"></span>
                                 <span class="bar"></span>
                                 <span class="bar"></span>
@@ -94,10 +98,13 @@
         </header>
         <!--end of page header-->
 
-         <!--main body section-->
-         <section>
-            <div class="container-fluid nopadding" style="background-image: url(assets/img/background/join.png);">
-                <div class="row joinvoices d-flex-wrap align-items-center mt-200 "  style="background: none !important;">
+        <!--main body section-->
+        <section>
+            <div class="container-fluid nopadding" >
+                <div class="row joinvoices d-flex-wrap align-items-center mt-50 "  style="background: none !important;">
+                    <div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-40">
+                        <img src="assets/img/logo/voiceslarge1.png" alt="">
+                    </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>  
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 nopadding">
@@ -119,7 +126,6 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <h3>Log in</h3>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
                                 <p class="mt-15 logintext">Already have an account?<br> <a href="login.html"> LOGIN</a></p>
                             </div>
@@ -146,8 +152,6 @@
                         </div>
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
                     </div>
-
-
                 </div>
             </div>
         </section> 
@@ -179,6 +183,5 @@
     <script src="./assets/js/theme-vendors.js"></script>
     <script src="./assets/js/theme.min.js"></script>
     <script src="./assets/js/jquery-2.2.1.min.js"></script>
-
 </body>
 </html>

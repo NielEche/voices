@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/theme.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script async src="assets/vendors/modernizr.min.js"> </script>
 </head>
@@ -96,17 +98,30 @@
         <!--end of page header-->
 
           <!--main body section-->
-        <div>
+        <section>
             <div class="container-fluid " style="background-color:#fff;">
                 <div class="profile row d-flex-wrap align-items-center  "  style="background: none !important;">
                     <div style="background-color: rgb(240, 240, 240);" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb-20">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-50">
-                            <img class="profileimage" src="assets/img/uploads/upload2.png" alt="">
+                            <div class="image-upload editimage container3">
+                                <label for="file-input">
+                                    <img id="" class="profileimage image2" src="assets/img/uploads/upload2.png" alt="">
+                                    <div class="overlay">
+                                        <a href="#" class="icon2" title="User Profile">
+                                          <i class="fa fa-camera"></i>
+                                        </a>
+                                    </div><br>
+                                </label>
+                                <input id="file-input" accept="image/*" onchange="loadFile(event)" type="file" />
+                            </div> 
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-10 mb-20">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-0 mb-20">
                             <a href="">Change Profile Photo</a>
+                            <div class="row d-flex flex-wrap align-items-center">
+                                <img  id="output" /> 
+                           </div>
                         </div>
                     </div>
 
@@ -272,7 +287,7 @@
     <script src="./assets/vendors/jquery.min.js"></script>
     <script src="./assets/js/theme-vendors.js"></script>
     <script src="./assets/js/theme.min.js"></script>
-    <script src="./assets/js/jquery-2.2.1.min.js"></script>
-
+    <script src="./assets/js/jquery-2.2.1.min.js"></script>  
+    <script src="assets/js/imgfolder.js"></script>
 </body>
 </html>

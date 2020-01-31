@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "/Applications/XAMPP/xamppfiles/htdocs/laravelApps/iamvocal/iamvocal-1"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "/Applications/XAMPP/xamppfiles/htdocs/voices"
+		},
+		{
+			"path": "/Applications/XAMPP/xamppfiles/htdocs/pro80"
+		},
+		{
+			"path": "/Applications/XAMPP/xamppfiles/htdocs/RV"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "voiceshtml"
+	}
+}
