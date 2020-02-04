@@ -12,10 +12,20 @@
   left: 175px;
  }
 
+ button {
+   outline: none;
+   text-decoration: ;
+ }
  
  @media (max-width: 360px) {
   .container-fluid {
     width: 100% !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .editimage {
+    left: 15px !important;
   }
 }
 
@@ -577,9 +587,10 @@ hr {
 
 .overlay {
   position: absolute;
+  text-align: center;
   top: 0;
   bottom: 0;
-  left: 13px;
+  left: 0;
   right: 0;
   height: 115px;
   width: 115px;
@@ -591,7 +602,8 @@ hr {
 }
 
 .container3:hover .overlay {
-  opacity: 1;
+  opacity: 0.6;
+  text-align: center;
 }
 
 .icon2 {
@@ -610,8 +622,10 @@ hr {
 }
 
 .editimage {
-  position: relative;
-  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 115px;
+  width: 115px;
 }
 
  .image-upload>input {
@@ -639,6 +653,19 @@ hr {
   text-align: left;
   font-weight: bolder;
   padding: 0px !important;
+}
+
+.socialfunction {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.numblikes {
+  font-family: gilroy-black;
+  font-size: 9px;
 }
 
 .voicess h4 {
@@ -682,6 +709,7 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  padding: 5px;
 }
 
 .recentvoicess{
@@ -1105,7 +1133,7 @@ i.fas {
 }
 
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #0000ff;
 }
 
 .checkmark:after {
@@ -1137,3 +1165,62 @@ i.fas {
   height: 0;
   width: 0;
 }
+
+
+   /* Dropdown Button */
+.dropbtn:after {
+  color: white;
+  border: none;
+  cursor: pointer;
+  content: '\2807';
+  font-size: 38px;
+   right: 60px;
+}
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0px;
+  bottom: 50px;
+  overflow: visible !important;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color:#0000ff;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
