@@ -1101,7 +1101,7 @@ a {
   cursor: pointer !important;
 }
 
-.likebtn i {
+.likebtn i , .sharebtn i{
   margin: 0;
   padding: 0;
   outline: 0;
@@ -1264,4 +1264,32 @@ i.fas {
 
 .shareto .modal-header {
   border: 0px ;
+}
+
+.insights h3{
+  color: #fff;
+  font-family: gilroy-regular;
+  font-size: 16px;
+  padding: 0px !important; 
+  margin: 0px;
+  font-weight: lighter;
+}
+
+.insights h2{
+  color: #fff;
+  font-family: gilroy-black;
+font-size: 18px;
+text-align: left;
+text-transform: uppercase;
+margin-bottom: 0px;
+margin-top: 12px;
+}
+
+.insights p{
+  color: #fff;
+  font-family: gilroy-regular;
+  font-size: 15px;
+  padding: 0px !important; 
+  margin: 0px;
+  font-weight: lighter;
 }

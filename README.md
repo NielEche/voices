@@ -1,3 +1,8 @@
+### i made the voices  clickable and made the individual page for the voices 
+
+### also added a support link to the dot dropdown menu in the supportvoices page 
+
+
 # voiceout page 
 * added the dot menu
 * added the like , comment and share , ps onlybthe like works, still havent gotten the comment setup
