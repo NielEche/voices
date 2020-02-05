@@ -1182,6 +1182,7 @@ i.fas {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  line-height: 1;
 }
 
 /* Dropdown button on hover & focus */
@@ -1231,7 +1232,9 @@ i.fas {
 }
 
 .carousel-item  .btn-group {
-  bottom: 10px;
+  top: 2px;
+  border: none;
+  text-decoration: none !important;
 }
 
 .carousel-item .dropdown-content{
