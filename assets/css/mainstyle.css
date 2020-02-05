@@ -899,7 +899,7 @@ font-family: gilroy-bold;
   font-size: 10px;
   width: 100%;
   color: rgb(54, 54, 54);
-  margin-top: 3px !important;
+  margin-top: 6px !important;
   padding: 0px !important;
 }
 
@@ -1182,7 +1182,6 @@ i.fas {
   font-size: 16px;
   border: none;
   cursor: pointer;
- 
 }
 
 /* Dropdown button on hover & focus */
@@ -1224,3 +1223,45 @@ i.fas {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;} 
+
+
+.carousel-item .dropbtn:after {
+  color: #0000ff;
+  font-size: 30px;
+}
+
+.carousel-item  .dropdown {
+  bottom: 10px;
+}
+
+.carousel-item .dropdown-content{
+  bottom: 40px;
+  min-width: 100px;
+}
+
+.shareto {
+  position:fixed;
+  top:auto;
+  right:auto;
+  left:auto;
+  bottom:0;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.sharetitle {
+  color: #0000ff;
+  border: none;
+  border-radius: 0px;
+  font-family: gilroy-black;
+}
+
+.shareto .close {
+  color: #0000ff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.shareto .modal-header {
+  border: 0px ;
+}
