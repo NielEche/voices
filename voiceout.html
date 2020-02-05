@@ -123,50 +123,31 @@
                                 </a>
                                 <div style="overflow: visible !important;" class="container-fluid socialfunction ">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-30">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding ">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding ">
                                             <i onclick="Toggle()" id="like" class="far fa-heart"> </i>
                                             <span class="numblikes">1452</span>
                                         </div> 
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding">
-                                            <i class="fa fa-share"></i>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding">
+                                            <a style="color: #fff;" data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> </a>
                                             <span class="numblikes">1202</span>
                                         </div> 
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-20 text-left nopadding">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-10 text-left nopadding">
                                             <i class="far fa-comment"></i>
                                             <span class="numblikes">452</span>
                                         </div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding text-left"> 
-                                        
-                                            <div class="dropdown">
-                                                <div onclick="myFunction()" class=" dropbtn test"></div>
-                                                <div id="myDropdown" class="dropdown-content">
-                                                <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
-                                                <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                            
+                                            <div class="btn-group dropup">
+                                                <div class="dropbtn test dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 </div>
-                                            </div>   
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-content">
+                                                    <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
+                                                    <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div> 
                                 </div> 
-                                
-                                <div style="top:auto;" class="container-fluid modal shareto fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                    <div style="width: 100% !important;" class="modal-dialog modal-lg nopadding">  
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="sharetitle" id="myModalLabel">share to</h4>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 mb-10 nopadding">
-                                                <a href="#"><img src="assets/img/icon/facebook.png" alt=""></a>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 mb-10 nopadding">
-                                                <a href="#"><img src="assets/img/icon/twitter.png" alt=""></a>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 mb-10 nopadding">
-                                                <a href="#"><img src="assets/img/icon/whatsapp.png" alt=""></a>
-                                            </div>            
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
                             
@@ -189,30 +170,31 @@
                                 </a>
                                 <div style="overflow: visible !important;" class="container-fluid socialfunction ">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-30">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding ">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding ">
                                             <i onclick="Toggle()" id="like" class="far fa-heart"> </i>
                                             <span class="numblikes">1452</span>
                                         </div> 
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding">
-                                            <i class="fa fa-share"></i>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding">
+                                            <a style="color: #fff;" data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> </a>
                                             <span class="numblikes">1202</span>
                                         </div> 
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-20 text-left nopadding">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-10 text-left nopadding">
                                             <i class="far fa-comment"></i>
                                             <span class="numblikes">452</span>
                                         </div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding text-left"> 
-                                        
-                                        <div class="dropdown">
-                                            <div onclick="myFunction()" class=" dropbtn test"></div>
-                                            <div id="myDropdown" class="dropdown-content">
-                                            <a href="#"><i class="fa fa-share"></i> Share To</a>
-                                            <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                            
+                                            <div class="btn-group dropup">
+                                                <div class="dropbtn test dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                </div>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-content">
+                                                    <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
+                                                    <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                                </div>
                                             </div>
-                                        </div>      
                                         </div>
                                     </div> 
-                                </div>                 
+                                </div> 
                             </div>
     
                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center mb-40 recentvoicess" >
@@ -234,30 +216,31 @@
                                 </a>
                                 <div style="overflow: visible !important;" class="container-fluid socialfunction ">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-30">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding ">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding ">
                                             <i onclick="Toggle()" id="like" class="far fa-heart"> </i>
                                             <span class="numblikes">1452</span>
                                         </div> 
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding">
-                                            <i class="fa fa-share"></i>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding">
+                                            <a style="color: #fff;" data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> </a>
                                             <span class="numblikes">1202</span>
                                         </div> 
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-20 text-left nopadding">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-10 text-left nopadding">
                                             <i class="far fa-comment"></i>
                                             <span class="numblikes">452</span>
                                         </div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding text-left"> 
-                                        
-                                        <div class="dropdown">
-                                            <div onclick="myFunction()" class=" dropbtn test"></div>
-                                            <div id="myDropdown" class="dropdown-content">
-                                            <a href="#"><i class="fa fa-share"></i> Share To</a>
-                                            <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                            
+                                            <div class="btn-group dropup">
+                                                <div class="dropbtn test dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                </div>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-content">
+                                                    <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
+                                                    <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                                </div>
                                             </div>
-                                        </div>      
                                         </div>
                                     </div> 
-                                </div>                  
+                                </div> 
                             </div>
     
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center mb-40 recentvoicess" >
@@ -279,30 +262,31 @@
                                 </a>
                                 <div style="overflow: visible !important;" class="container-fluid socialfunction ">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-30">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding ">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding ">
                                             <i onclick="Toggle()" id="like" class="far fa-heart"> </i>
                                             <span class="numblikes">1452</span>
                                         </div> 
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding">
-                                            <i class="fa fa-share"></i>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding">
+                                            <a style="color: #fff;" data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> </a>
                                             <span class="numblikes">1202</span>
                                         </div> 
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-20 text-left nopadding">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-10 text-left nopadding">
                                             <i class="far fa-comment"></i>
                                             <span class="numblikes">452</span>
                                         </div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding text-left"> 
-                                        
-                                        <div class="dropdown">
-                                            <div onclick="myFunction()" class=" dropbtn test"></div>
-                                            <div id="myDropdown" class="dropdown-content">
-                                            <a href="#"><i class="fa fa-share"></i> Share To</a>
-                                            <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                            
+                                            <div class="btn-group dropup">
+                                                <div class="dropbtn test dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                </div>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-content">
+                                                    <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
+                                                    <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                                </div>
                                             </div>
-                                        </div>      
                                         </div>
                                     </div> 
-                                </div>             
+                                </div> 
                             </div>
                             
                         </div>
@@ -329,32 +313,33 @@
                                 </a>
                                 <div style="overflow: visible !important;" class="container-fluid socialfunction ">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-30">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding ">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding ">
                                             <i onclick="Toggle()" id="like" class="far fa-heart"> </i>
                                             <span class="numblikes">1452</span>
                                         </div> 
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding">
-                                            <i class="fa fa-share"></i>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding">
+                                            <a style="color: #fff;" data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> </a>
                                             <span class="numblikes">1202</span>
                                         </div> 
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-20 text-left nopadding">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-10 text-left nopadding">
                                             <i class="far fa-comment"></i>
                                             <span class="numblikes">452</span>
                                         </div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding text-left"> 
-                                        
-                                        <div class="dropdown">
-                                            <div onclick="myFunction()" class=" dropbtn test"></div>
-                                            <div id="myDropdown" class="dropdown-content">
-                                            <a href="#"><i class="fa fa-share"></i> Share To</a>
-                                            <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                            
+                                            <div class="btn-group dropup">
+                                                <div class="dropbtn test dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                </div>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-content">
+                                                    <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
+                                                    <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                                </div>
                                             </div>
-                                        </div>      
                                         </div>
                                     </div> 
-                                </div>                 
+                                </div> 
                             </div>
-    
+
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center mb-40 recentvoicess" >
                                 <a href="voice.html">
                                     <div class=" recentvoicess" style="background-image: url(assets/img/uploads/upload2.png);">
@@ -372,32 +357,33 @@
                                         </div> 
                                     </div> 
                                 </a>
-                                <div style="overflow: visible !important;" class="container-fluid socialfunction ">
+                                 <div style="overflow: visible !important;" class="container-fluid socialfunction ">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-30">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding ">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding ">
                                             <i onclick="Toggle()" id="like" class="far fa-heart"> </i>
                                             <span class="numblikes">1452</span>
                                         </div> 
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding">
-                                            <i class="fa fa-share"></i>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding">
+                                            <a style="color: #fff;" data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> </a>
                                             <span class="numblikes">1202</span>
                                         </div> 
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-20 text-left nopadding">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-10 text-left nopadding">
                                             <i class="far fa-comment"></i>
                                             <span class="numblikes">452</span>
                                         </div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding text-left"> 
-                                        
-                                        <div class="dropdown">
-                                            <div onclick="myFunction()" class=" dropbtn test"></div>
-                                            <div id="myDropdown" class="dropdown-content">
-                                            <a href="#"><i class="fa fa-share"></i> Share To</a>
-                                            <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                            
+                                            <div class="btn-group dropup">
+                                                <div class="dropbtn test dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                </div>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-content">
+                                                    <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
+                                                    <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                                </div>
                                             </div>
-                                        </div>      
                                         </div>
                                     </div> 
-                                </div>                 
+                                </div> 
                             </div>
     
                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center mb-40 recentvoicess" >
@@ -419,30 +405,31 @@
                                 </a>
                                 <div style="overflow: visible !important;" class="container-fluid socialfunction ">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-30">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding ">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding ">
                                             <i onclick="Toggle()" id="like" class="far fa-heart"> </i>
                                             <span class="numblikes">1452</span>
                                         </div> 
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding">
-                                            <i class="fa fa-share"></i>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding">
+                                            <a style="color: #fff;" data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> </a>
                                             <span class="numblikes">1202</span>
                                         </div> 
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-20 text-left nopadding">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-10 text-left nopadding">
                                             <i class="far fa-comment"></i>
                                             <span class="numblikes">452</span>
                                         </div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding text-left"> 
-                                        
-                                        <div class="dropdown">
-                                            <div onclick="myFunction()" class=" dropbtn test"></div>
-                                            <div id="myDropdown" class="dropdown-content">
-                                            <a href="#"><i class="fa fa-share"></i> Share To</a>
-                                            <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                            
+                                            <div class="btn-group dropup">
+                                                <div class="dropbtn test dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                </div>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-content">
+                                                    <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
+                                                    <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                                </div>
                                             </div>
-                                        </div>      
                                         </div>
                                     </div> 
-                                </div>                  
+                                </div> 
                             </div>
     
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center mb-40 recentvoicess" >
@@ -464,32 +451,32 @@
                                 </a>
                                 <div style="overflow: visible !important;" class="container-fluid socialfunction ">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding mt-30">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding ">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding ">
                                             <i onclick="Toggle()" id="like" class="far fa-heart"> </i>
                                             <span class="numblikes">1452</span>
                                         </div> 
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-20 text-left nopadding">
-                                            <i class="fa fa-share"></i>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 text-left nopadding">
+                                            <a style="color: #fff;" data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> </a>
                                             <span class="numblikes">1202</span>
                                         </div> 
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-20 text-left nopadding">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 mt-10 text-left nopadding">
                                             <i class="far fa-comment"></i>
                                             <span class="numblikes">452</span>
                                         </div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding text-left"> 
-                                        
-                                        <div class="dropdown">
-                                            <div onclick="myFunction()" class=" dropbtn test"></div>
-                                            <div id="myDropdown" class="dropdown-content">
-                                            <a href="#"><i class="fa fa-share"></i> Share To</a>
-                                            <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                            
+                                            <div class="btn-group dropup">
+                                                <div class="dropbtn test dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                </div>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-content">
+                                                    <a data-toggle="modal" data-target=".shareto" href="#"><i  class="fa fa-share"></i> Share To</a>
+                                                    <a href="#"><i class="far fa-trash-alt"></i> Delete</a>
+                                                </div>
                                             </div>
-                                        </div>      
                                         </div>
                                     </div> 
-                                </div>                 
+                                </div> 
                             </div>
-                            
                         </div>
                     </div>
     
@@ -514,6 +501,27 @@
                     </div>
                 </div>
             </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <div style="top:auto;" class="container-fluid modal shareto fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                        <div style="width: 100% !important;" class="modal-dialog modal-lg nopadding">  
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="sharetitle" id="myModalLabel">share to</h4>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 mb-10 nopadding">
+                                    <a href="#"><img src="assets/img/icon/facebook.png" alt=""></a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 mb-10 nopadding">
+                                    <a href="#"><img src="assets/img/icon/twitter.png" alt=""></a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mt-10 mb-10 nopadding">
+                                    <a href="#"><img src="assets/img/icon/whatsapp.png" alt=""></a>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
        
 

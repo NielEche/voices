@@ -6,10 +6,10 @@
  }
 
  .alert{
-   position: absolute;
-   width: 50%;
+   position: fixed;
+   width: 90%;
    z-index: 100;
-  left: 175px;
+  right: 0;
  }
 
  button {
@@ -665,7 +665,7 @@ hr {
 
 .numblikes {
   font-family: gilroy-black;
-  font-size: 9px;
+  font-size: 8px;
 }
 
 .voicess h4 {
@@ -1173,7 +1173,7 @@ i.fas {
   border: none;
   cursor: pointer;
   content: '\2807';
-  font-size: 38px;
+  font-size: 30px;
    right: 60px;
 }
 
@@ -1204,9 +1204,9 @@ i.fas {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  right: 0px;
-  bottom: 50px;
+  bottom: 20px;
   overflow: visible !important;
+  margin-top: 20px !important;
 }
 
 /* Links inside the dropdown */
@@ -1230,7 +1230,7 @@ i.fas {
   font-size: 30px;
 }
 
-.carousel-item  .dropdown {
+.carousel-item  .btn-group {
   bottom: 10px;
 }
 
@@ -1292,4 +1292,28 @@ margin-top: 12px;
   padding: 0px !important; 
   margin: 0px;
   font-weight: lighter;
+}
+
+.track input {
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  border: none;
+  padding:10px;
+  outline: none;
+}
+
+.track input::placeholder{
+ color: #0000ff;
+ font-size: 14px;
+}
+
+.track h3 {
+  margin: 0px;
+  margin-top:15px;
+  width: 100%;
+}
+
+.track #ui-id-1-button {
+  background-color: rgb(231, 231, 231) !important;
+  padding:10px;
 }
