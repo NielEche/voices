@@ -1,4 +1,4 @@
-### i made the voices  clickable and made the individual page for the voices 
+### i made the voices  clickable and made the individual page for the voices called voice.html
 
 ### also added a support link to the dot dropdown menu in the supportvoices page 
 
