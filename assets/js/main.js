@@ -1,24 +1,5 @@
 
 
-
- /* the like button*/
-
- var like = document.getElementById('like');
-
- function Toggle() {
-      if(like.classList.contains("far")) {
-     like.classList.remove("far");
-     like.classList.add("fas");
- } else{
-     like.classList.remove("fas");
-     like.classList.add("far");
- }
- }
-
- /* like button end */
-
-
-
  /* pagination */
  var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
