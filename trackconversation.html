@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/theme.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+   
     <script async src="assets/vendors/modernizr.min.js"> </script>
 </head>
 
@@ -69,7 +70,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="trackconversation.html">
                                     <span class="link-ext"></span>
                                     <span class="txt">TRACK CONVERSATION</span>
                                 </a>
@@ -105,38 +106,79 @@
                                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 nopadding">
                                         <input type="text" placeholder="SEARCH">
                                     </div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center nopadding">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 my-2 text-center nopadding">
                                        <h3>OR</h3>
                                     </div>
                                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 nopadding">
                                         <select name="" id="">
                                             <option value="">SELECT A TOPIC</option>
-                                            <option value="Educaio">Education</option>
+                                            <option value="Educaion">Education</option>
                                             <option value="Climate">Climate</option>
                                             <option value="Equality">Equality</option>
                                             <option value="Creativity">Creativity</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 track nopadding">
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
-                                        <input type="text" placeholder="YEAR">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my-1 track my-2 nopadding">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-right  nopadding">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i style="color: #0000ff;" class="fa fa-calendar">
+                                                </i>
+                                            </div>
+                                            <input class="form-control" id="date" name="date" placeholder="" type="text"/>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-right">
-                                        <div class='input-group date' id='datetimepicker1'>
-                                            <input type='text' class="form-control" />
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center my-1 nopadding">
+                                        <h3>TO</h3>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-right  nopadding">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i style="color: #0000ff;" class="fa fa-calendar">
+                                                </i>
+                                            </div>
+                                            <input class="form-control" id="date" name="date" placeholder="" type="text"/>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my-1 text-left track my-2 nopadding">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right nopadding">
+                                        <input type="text" placeholder="LOCATION">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right ">
+                                        <select name="" id="" >
+                                            <option value="">Age </option>
+                                            <option value="13 - 17">13 - 17</option>
+                                            <option value="18 - 29">18 - 29</option>
+                                            <option value="30 - 49">30 - 49</option>
+                                            <option value="50 - 60">50 - 60</option>
+                                            <option value="60 - 80">60 - 80</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center nopadding">
+                                        <select name="" id="">
+                                            <option value="">Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+                                            <option value="Gender neutral">Gender Neutral</option>
+                                            <option value="Non-binary">Non-binary</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right nopadding">
+                                    <button type="submit" class=" trackbtn">GO</button>
+                                </div>
+                                
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
+        
 
          <!--footer section-->
          <footer class="main-footer bg-charade pt-10" data-sticky-footer="true">
@@ -165,5 +207,20 @@
     <script src="./assets/js/theme-vendors.js"></script>
     <script src="./assets/js/theme.min.js"></script>
     <script src="./assets/js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+    <script>
+        $(document).ready(function(){
+            var date_input=$('input[name="date"]'); //our date input has the name "date"
+            var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+            date_input.datepicker({
+                format: 'mm/dd/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            })
+        })
+    </script>
 </body>
 </html>

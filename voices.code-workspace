@@ -14,9 +14,12 @@
 		},
 		{
 			"path": "/Applications/XAMPP/xamppfiles/htdocs/RV"
+		},
+		{
+			"path": "/Applications/XAMPP/xamppfiles/htdocs/EODB"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "voiceshtml"
+		"liveServer.settings.multiRootWorkspaceName": "EODB"
 	}
 }

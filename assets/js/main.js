@@ -1,4 +1,11 @@
+/* Alert end */
+window.setTimeout(function() {
+  $(".alert").fadeTo(500, 0).slideUp(500, function(){
+      $(this).remove(); 
+  });
+}, 3000);
 
+/* Alert end */
 
  /* pagination */
  var currentTab = 0; // Current tab is set to be the first tab (0)

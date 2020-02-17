@@ -1,23 +1,37 @@
 /* custom  style */
 
 .nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
- }
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
- .alert{
-   position: fixed;
-   width: 90%;
-   z-index: 100;
+.alert {
+  position: fixed;
+  width: 90%;
+  z-index: 100;
   right: 0;
- }
+}
 
- button {
-   outline: none;
-   text-decoration: ;
- }
- 
- @media (max-width: 360px) {
+@font-face {
+  font-family: 'gilroy-regular';
+  src: url(assets/fonts/Gilroy-Regular.otf);
+}
+
+@font-face {
+  font-family: 'gilroy-bold';
+  src: url(assets/fonts/Gilroy-Bold.otf);
+}
+
+@font-face {
+  font-family: 'gilroy-black';
+  src: url(assets/fonts/Gilroy-Black.otf);
+}
+
+button {
+  outline: none;
+}
+
+@media (max-width: 360px) {
   .container-fluid {
     width: 100% !important;
   }
@@ -29,279 +43,296 @@
   }
 }
 
- .container-fluid {
-   width:375px ;
-   margin: 0 auto !important;
-   overflow: hidden !important;
- }
+.container-fluid {
+  width: 375px;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
 
- .container{
+.container {
   width: 360px !important;
   margin: 0 auto !important;
   overflow: hidden !important;
 }
 
- .nav-trigger .bar {
-    background-color: #fff !important;
+.nav-trigger .bar {
+  background-color: #fff !important;
 }
 
 .nav-trigger.collapsed.style-mobile .bar:nth-child(2) {
-    width: 20px;
+  width: 20px;
 }
 
- .bar { 
-	height: 3px !important;
-	width: 24px !important; 
+.bar {
+  height: 3px !important;
+  width: 24px !important;
 }
 
 .nav-trigger.style-mobile .bars {
-	height: 19px !important;
+  height: 19px !important;
 }
 
 .nav-trigger.style-mobile .bar:nth-child(2) {
-	margin-right: 0px !important;
+  margin-right: 0px !important;
 }
 
 .nav-trigger.style-mobile .bar {
-	border-radius: 0px !important;
+  border-radius: 0px !important;
 }
 
 .mainheader {
-    background-color: #0000ff;
+  background-color: #0000ff;
 }
 
 .mainheader img {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .mainheader button {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
-.bar  {
-    height: 3px !important;
-    width: 24px !important;
+.bar {
+  height: 3px !important;
+  width: 24px !important;
 }
 
 .d-flex-wrap {
-    background-color: #0000ff;
+  background-color: #0000ff;
 }
 
- ul.nav.main-nav > li > a {
-    -webkit-box-pack: left;
-    justify-content: left !important; 
+ul.nav.main-nav>li>a {
+  -webkit-box-pack: left;
+  justify-content: left !important;
 
 }
 
 
 
 .visible-xs {
-    @media (max-width: @screen-phone-max) {
+  @media (max-width: @screen-phone-max) {
     .responsive-visibility();
-    }  
-    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
-      .responsive-invisibility();
-    }
-    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
-      .responsive-invisibility();
-    }
-    @media (min-width: @screen-large-desktop) {
-      .responsive-invisibility();
-    }
   }
-  .visible-sm {
+
+  @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+    .responsive-invisibility();
+  }
+
+  @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+    .responsive-invisibility();
+  }
+
+  @media (min-width: @screen-large-desktop) {
+    .responsive-invisibility();
+  }
+}
+
+.visible-sm {
+  @media (max-width: @screen-phone-max) {
+    .responsive-invisibility();
+  }
+
+  .visible-xs {
     @media (max-width: @screen-phone-max) {
-    .responsive-invisibility();
-    }
-    &.visible-xs {
-      @media (max-width: @screen-phone-max) {
-        .responsive-visibility();
-      }    
-    }
-    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
       .responsive-visibility();
     }
-    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
-      .responsive-invisibility();
-    }
-    @media (min-width: @screen-large-desktop) {
-      .responsive-invisibility();
-    }
   }
-  .visible-md {
-    @media (max-width: @screen-phone-max) {  
+
+  @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+    .responsive-visibility();
+  }
+
+  @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
     .responsive-invisibility();
-    }
-    &.visible-xs {
-      @media (max-width: @screen-phone-max) {  
-        .responsive-visibility();
-      }    
-    }
-    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
-      .responsive-invisibility();
-    }
-    &.visible-sm {
-      @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
-        .responsive-visibility();
-      }    
-    }
-    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
-      .responsive-visibility();
-    }
-    @media (min-width: @screen-large-desktop) {
-      .responsive-invisibility();
-    }
   }
-  .visible-lg {
+
+  @media (min-width: @screen-large-desktop) {
+    .responsive-invisibility();
+  }
+}
+
+.visible-md {
+  @media (max-width: @screen-phone-max) {
+    .responsive-invisibility();
+  }
+
+  &.visible-xs {
     @media (max-width: @screen-phone-max) {
-    .responsive-invisibility();
-    }
-    &.visible-xs {
-      @media (max-width: @screen-phone-max) {
-        .responsive-visibility();
-      }    
-    }
-    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
-      .responsive-invisibility();
-    }
-    &.visible-sm {
-      @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
-        .responsive-visibility();
-      }    
-    }
-    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
-      .responsive-invisibility();
-    }
-    &.visible-md {
-      @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
-        .responsive-visibility();
-      }    
-    }
-    @media (min-width: @screen-large-desktop) {
       .responsive-visibility();
     }
   }
-  
-  
-  .navbar-header:only-child {
-  
-      -webkit-box-flex: 0 !important;
-      flex: none;
-  
+
+  @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+    .responsive-invisibility();
   }
-  
-  .navbar-header {
-  
-      padding-left: 0px;“    -webkit-box-pack: none !important;
-      justify-content: none !important;
-  
+
+  &.visible-sm {
+    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+      .responsive-visibility();
+    }
   }
-  
-  button.nav-trigger {‘
-  
-      position: relative !important;
-      float: right !important;
-     
-      background-color !important: 
-  
-  transparent !important;
-  
+
+  @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+    .responsive-visibility();
+  }
+
+  @media (min-width: @screen-large-desktop) {
+    .responsive-invisibility();
+  }
+}
+
+.visible-lg {
+  @media (max-width: @screen-phone-max) {
+    .responsive-invisibility();
+  }
+
+  &.visible-xs {
+    @media (max-width: @screen-phone-max) {
+      .responsive-visibility();
+    }
+  }
+
+  @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+    .responsive-invisibility();
+  }
+
+  &.visible-sm {
+    @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+      .responsive-visibility();
+    }
+  }
+
+  @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+    .responsive-invisibility();
+  }
+
+  &.visible-md {
+    @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+      .responsive-visibility();
+    }
+  }
+
+  @media (min-width: @screen-large-desktop) {
+    .responsive-visibility();
+  }
+}
+
+
+.navbar-header:only-child {
+
+  -webkit-box-flex: 0 !important;
+  flex: none;
+
+}
+
+.navbar-header {
+  padding-left: 0px;
+ -webkit-box-pack: none !important;
+  justify-content: none !important;
+}
+
+button.nav-trigger {
+  position: relative !important;
+  float: right !important;
+  background-color: transparent !important;
   background-image: none !important;
-  
-  border: 1px solid
-  
-      transparent !important;
-      border-radius: 4px !important;
-  
-  }
-  
-  .inline-nav > li + li {
-  
-      margin-left: 3px !important;
-      text-align: right !important; 
-  
-  }
-  
-
-.formtext a{
-    font-size: 20px;
-    color:#fff;
-    font-family: gilroy-regular;
-    font-weight: bolder;
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
 }
 
-.nextbutton, .prevbutton, .arrow{
-    font-size: 18px !important;
-	border: 0px !important;
-    color: #fff;
-    background-color: #0000ff;
-    font-weight: bold !important;
-	width: 100%;
-	padding-top: 10px !important;
-    font-family: gilroy-regular;
-    outline: none;
+.inline-nav>li+li {
+  margin-left: 3px !important;
+  text-align: right !important;
 }
 
-#printchatbox, #printchatbox1 {
-    border: 0 none;
-    border-bottom: dashed 7px;
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-color: #fff;
-    color: #fff;
-    font-family: Gilroy-black;
-    font-size: 7vw;
-    position: sticky;
+
+.formtext a {
+  font-size: 20px;
+  color: #fff;
+  font-family: gilroy-regular;
+  font-weight: bolder;
+}
+
+.nextbutton,
+.prevbutton,
+.arrow {
+  font-size: 18px !important;
+  border: 0px !important;
+  color: #fff;
+  background-color: #0000ff;
+  font-weight: bold !important;
+  width: 100%;
+  padding-top: 10px !important;
+  font-family: gilroy-regular;
+  outline: none;
+}
+
+#printchatbox,
+#printchatbox1 {
+  border: 0 none;
+  border-bottom: dashed 7px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-color: #fff;
+  color: #fff;
+  font-family: gilroy-black;
+  font-size: 7vw;
+  position: sticky;
 }
 
 #printchatbox1 {
   font-size: 40px !important;
 }
 
-.detailshead{
-    color: #fff !important;
-    font-weight: bolder !important;
-    font-size: 87px ;
-    font-family: Gilroy-Black !important;
-    margin-bottom:0px !important;
-    padding: 0px !important;
+.detailshead {
+  color: #fff !important;
+  font-weight: bolder !important;
+  font-size: 87px;
+  font-family: gilroy-Black !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
 }
 
-.detailstext{
-    color: #fff;
-    font-size: 15px;
-    font-weight: lighter;
-    font-family: Gilroy-Bold;
+.detailstext {
+  color: #fff;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: gilroy-Bold;
 }
 
 
-.details{
-   background-repeat: no-repeat;
-   background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    background-color:#0000ff;
-    background-blend-mode: multiply;
+.details {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #0000ff;
+  background-blend-mode: multiply;
 }
-.formgroup input{
+
+.formgroup input {
   width: 100%;
   color: #0000ff !important;
   outline: none;
 }
 
-.formgroup input::placeholder, .lqd-unit-animation-done{
+.formgroup input::placeholder,
+.lqd-unit-animation-done {
   color: #0000ff;
   padding-left: 10px;
   font-family: gilroy-regular;
   padding: 5px !important;
 }
 
-.ui-selectmenu-text, .ui-menu-item-wrapper, .ui-state-active{
+.ui-selectmenu-text,
+.ui-menu-item-wrapper,
+.ui-state-active {
   color: #0000ff !important;
-  font-family:gilroy-regular;
+  font-family: gilroy-regular;
   padding: 5px;
 }
+
 .ui-selectmenu-button.ui-button {
   text-align: left;
   width: 100% !important;
@@ -318,24 +349,25 @@
   width: 100%;
   outline: none;
 }
-.formgroup label{
+
+.formgroup label {
   color: #fff;
-  font-family: gilroy-regular;4
-  font-size: 18px;
+  font-family: gilroy-regular;
+ font-size: 18px;
   margin-bottom: 0px !important;
 }
 
 .details2 h1 {
-  font-family: Gilroy-Black;
+  font-family: gilroy-Black;
   font-size: 42px;
   font-weight: bolder;
   color: #fff;
   margin-bottom: 0px;
 }
 
-.details2 input{
+.details2 input {
   width: 85%;
-  background-color: #0000ff ;
+  background-color: #0000ff;
   border: 0 none;
   border-bottom: dashed 7px;
   border-top-style: hidden;
@@ -346,16 +378,16 @@
   outline: none;
 }
 
-.details2 p{
+.details2 p {
   font-family: gilroy-regular;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
-  margin-top: 10px ;
+  margin-top: 10px;
   margin-bottom: 0PX;
 }
 
-.details2 a{
+.details2 a {
   font-family: gilroy-bold;
   color: #fff;
 }
@@ -364,20 +396,20 @@
   margin-bottom: 10px !important;
 }
 
-.sharebutton{
+.sharebutton {
   color: #fff;
   font-size: 20px;
   background-color: #0000ff;
   padding-left: 15px;
   padding-right: 15px;
-  font-family: Gilroy-Black;
-  border:solid 3px;
+  font-family: gilroy-Black;
+  border: solid 3px;
   outline: none;
 }
 
 .preview h4 {
   color: #fff;
-  font-family: Gilroy-Black;
+  font-family: gilroy-Black;
   font-weight: bolder;
   padding: 0px !important;
   margin: 0px !important;
@@ -391,7 +423,7 @@
   max-height: 100% !important;
 }
 
-.joinvoices h1{
+.joinvoices h1 {
   color: #fff;
   font-family: gilroy-black;
   font-size: 34px !important;
@@ -437,29 +469,29 @@ hr {
 .socialsection {
   background-color: #fff;
   border: 2px;
-  border-radius: 27px ;
-  
+  border-radius: 27px;
+
 }
 
-.socialsection h1{
-  text-align: right;
+.socialsection h1 {
+  text-align: center;
   font-family: gilroy-regular;
-  font-size: 19px !important;
+  font-size: 14px !important;
   font-weight: 500;
   color: #000;
   letter-spacing: 1px;
-  line-height: 20px;
+  line-height: 14px;
 }
 
-.socialsection a{
+.socialsection a {
   position: relative;
 }
 
 .signupform {
   background-repeat: no-repeat;
-   background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
 }
 
 .form-group label {
@@ -469,7 +501,7 @@ hr {
   margin: 0px;
 }
 
-.form-group input{
+.form-group input {
   width: 100%;
   color: #0000ff;
   font-family: gilroy-bold;
@@ -479,7 +511,9 @@ hr {
 }
 
 
-.form-group .ui-selectmenu-text, .ui-menu-item-wrapper, .ui-state-active {
+.form-group .ui-selectmenu-text,
+.ui-menu-item-wrapper,
+.ui-state-active {
   font-family: gilroy-bold !important;
 }
 
@@ -521,7 +555,7 @@ hr {
   margin-top: 5px;
 }
 
-.form-group1 input::placeholder{
+.form-group1 input::placeholder {
   color: #fff;
   font-family: gilroy-bold, FontAwesome;
   font-size: 19px;
@@ -540,42 +574,44 @@ hr {
   font-size: 16px;
 }
 
-.loginoption a{
+.loginoption a {
   color: #ffffff;
   font-family: gilroy-black;
   font-weight: bolder;
 }
 
 
-@media screen and (min-width: 1200px){
-.main-nav {
-  display: block !important;
-  flex: 1 auto !important;
-  text-align: left !important;
-}
-.txt {
-  text-align: left !important;
-  width: 100%;
-}
-  .main-nav  a{
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    display: block !important;
+    flex: 1 auto !important;
+    text-align: left !important;
+  }
+
+  .txt {
+    text-align: left !important;
+    width: 100%;
+  }
+
+  .main-nav a {
     width: 100% !important;
     text-align: left !important;
   }
 
-  .main-nav-hover-underline-2 > li > a .link-ext {
+  .main-nav-hover-underline-2>li>a .link-ext {
     display: none !important;
   }
- }
+}
 
- 
- .profileimage{
+
+.profileimage {
   object-fit: cover;
   border-radius: 50%;
   height: 115px;
   width: 115px;
- }
+}
 
- .container3 {
+.container3 {
   position: relative;
   width: 100%;
   max-width: 400px;
@@ -628,27 +664,27 @@ hr {
   width: 115px;
 }
 
- .image-upload>input {
+.image-upload>input {
   display: none !important;
- }
- 
- #snap {
+}
+
+#snap {
   color: #fff;
-  font-family:gilroy-bold;
+  font-family: gilroy-bold;
   padding: 0px !important;
   text-align: left !important;
- }
- 
- #choosefile {
+}
+
+#choosefile {
   font-size: 20px;
   color: #fff !important;
   font-family: gilroy-regular;
   font-weight: bolder;
 }
 
-.voicesout h3{
+.voicesout h3 {
   position: relative;
-  color:#fff;
+  color: #fff;
   font-family: gilroy-black;
   text-align: left;
   font-weight: bolder;
@@ -684,18 +720,18 @@ hr {
   font-family: gilroy-black;
   font-size: 8px;
   text-align: center;
-  margin:0px !important;
+  margin: 0px !important;
   padding: 0px;
   line-height: 0.9;
 }
 
 .voicess h1 {
   text-align: left;
-  margin:0px;
+  margin: 0px;
   font-size: 15px;
   font-family: gilroy-black;
   color: #fff;
- text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .voicess span {
@@ -712,15 +748,15 @@ hr {
   padding: 5px;
 }
 
-.recentvoicess{
+.recentvoicess {
   width: 100%;
   height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
-   background-position: center;
-   background-blend-mode: multiply;
-   background-color:#0000ff;
-   background-blend-mode: multiply;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #0000ff;
+  background-blend-mode: multiply;
 }
 
 .voicess3 {
@@ -736,15 +772,15 @@ hr {
   font-family: gilroy-black;
   font-size: 8px;
   text-align: center;
-  margin:0px !important;
+  margin: 0px !important;
   padding: 0px;
   line-height: 0.9;
 }
 
 .voicess3 a {
   color: #fff;
-font-size: 7px;
-font-family: gilroy-bold;
+  font-size: 7px;
+  font-family: gilroy-bold;
   text-align: center !important;
   border-width: 2px;
   border-color: #fff;
@@ -755,8 +791,8 @@ font-family: gilroy-bold;
 
 .voicess a {
   color: #fff;
-font-size: 7px;
-font-family: gilroy-bold;
+  font-size: 7px;
+  font-family: gilroy-bold;
   text-align: center !important;
   border-width: 2px;
   border-color: #fff;
@@ -770,10 +806,10 @@ font-family: gilroy-bold;
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
-   background-position: center;
-   background-blend-mode: multiply;
-   background-color:#0000ff;
-   background-blend-mode: multiply;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #0000ff;
+  background-blend-mode: multiply;
 }
 
 .voicess2 {
@@ -784,7 +820,7 @@ font-family: gilroy-bold;
   width: 100%;
 }
 
-.voicess2 h1{
+.voicess2 h1 {
   color: #fff;
   font-family: gilroy-black;
   font-size: 35px;
@@ -793,6 +829,7 @@ font-family: gilroy-bold;
   line-height: 1;
   text-transform: uppercase;
 }
+
 .voicess2 span {
   font-family: gilroy-regular !important;
   font-weight: lighter;
@@ -807,9 +844,9 @@ font-family: gilroy-bold;
 }
 
 
-.voicesout button{
-  color:#fff;
-  background-color:#0000ff ;
+.voicesout button {
+  color: #fff;
+  background-color: #0000ff;
   margin-top: 20px;
   font-family: gilroy-black;
 }
@@ -827,7 +864,7 @@ font-family: gilroy-bold;
 
 #regForm {
   background-color: #0000ff;
- 
+
   width: 100%;
   min-width: 300px;
   z-index: 100;
@@ -839,7 +876,7 @@ font-family: gilroy-bold;
 }
 
 
-.profile h1{
+.profile h1 {
   color: #0000ff;
   font-family: gilroy-bold;
   font-size: 25px;
@@ -854,7 +891,7 @@ font-family: gilroy-bold;
   padding-top: 5px;
 }
 
-.profile h4{
+.profile h4 {
   color: #fff;
   font-family: gilroy-black;
   font-size: 17px;
@@ -864,7 +901,7 @@ font-family: gilroy-bold;
 }
 
 .profile h5 {
-  color:#fff;
+  color: #fff;
   font-family: gilroy-black;
   font-size: 9px;
   margin: 0px !important;
@@ -873,7 +910,7 @@ font-family: gilroy-bold;
   padding: 0px !important;
 }
 
-.profile p{
+.profile p {
   font-family: gilroy-regular;
   font-size: 12px;
   width: 100%;
@@ -884,17 +921,17 @@ font-family: gilroy-bold;
 }
 
 
-.profile a{
+.profile a {
   font-family: gilroy-bold;
   font-size: 15px;
   width: 100%;
-  color:#0000ff;
+  color: #0000ff;
   margin-bottom: 5px !important;
   padding: 0px !important;
   line-height: 1.1;
 }
 
-.profile2 p{
+.profile2 p {
   font-family: gilroy-regular;
   font-size: 10px;
   width: 100%;
@@ -903,7 +940,7 @@ font-family: gilroy-bold;
   padding: 0px !important;
 }
 
-.profile2 span{
+.profile2 span {
   font-family: gilroy-bold;
   font-size: 11px;
   width: 100%;
@@ -913,7 +950,7 @@ font-family: gilroy-bold;
   line-height: 1.1;
 }
 
-.editprofile label{
+.editprofile label {
   color: #0000ff;
   font-family: gilroy-regular;
   font-weight: lighter;
@@ -921,19 +958,19 @@ font-family: gilroy-bold;
   margin-top: 10px;
 }
 
-.editprofile input  {
+.editprofile input {
   width: 100%;
   border-top: none;
   border-left: none;
   border-right: none;
-  outline:none;
+  outline: none;
   border-color: rgb(202, 201, 201);
   border-width: 1px !important;
   color: #0000ff;
 }
 
 
-.editaccount label{
+.editaccount label {
   color: #fff;
   font-family: gilroy-regular;
   font-weight: lighter;
@@ -941,12 +978,12 @@ font-family: gilroy-bold;
   margin-top: 10px;
 }
 
-.editaccount input  {
+.editaccount input {
   width: 100%;
   border-top: none;
   border-left: none;
   border-right: none;
-  outline:none;
+  outline: none;
   background-color: #0000ff !important;
   border-color: rgb(202, 201, 201);
   border-width: 1px !important;
@@ -956,13 +993,13 @@ font-family: gilroy-bold;
 
 .editprofile span {
   border-top: none !important;
-  background-color: #fff !important ;
+  background-color: #fff !important;
   border-left: none;
   border-right: none;
 
 }
 
-.editprofile textarea{
+.editprofile textarea {
   background-color: rgb(240, 240, 240);
   border: none !important;
   width: 100%;
@@ -970,7 +1007,7 @@ font-family: gilroy-bold;
   outline: none;
 }
 
-#editprofilebtn{
+#editprofilebtn {
   color: #fff;
   background-color: #0000ff;
   font-family: gilroy-black;
@@ -981,7 +1018,10 @@ font-family: gilroy-bold;
   padding-bottom: 5px;
 }
 
-#editaccountbtn, #deactivatebtn, #deletebtn , #resetpasswordbtn{
+#editaccountbtn,
+#deactivatebtn,
+#deletebtn,
+#resetpasswordbtn {
   color: #0000ff;
   background-color: #fff;
   font-family: gilroy-black;
@@ -992,16 +1032,16 @@ font-family: gilroy-bold;
   padding-bottom: 5px;
 }
 
-.editaccount h1{
+.editaccount h1 {
   color: #fff;
   font-family: gilroy-black;
-  font-size: 16px ;
+  font-size: 16px;
 }
 
-.editaccount p{
+.editaccount p {
   color: #fff;
   font-family: gilroy-regular;
-  font-size: 15px ;
+  font-size: 15px;
 }
 
 .profilepage {
@@ -1012,7 +1052,7 @@ font-family: gilroy-bold;
   height: 280px !important;
 }
 
-.profile2{
+.profile2 {
   color: #fff !important;
 }
 
@@ -1090,18 +1130,20 @@ font-family: gilroy-bold;
   color: #fff;
   border-width: 2px;
 }
+
 #wrap {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
 }
- 
+
 a {
   cursor: pointer !important;
 }
 
-.likebtn i , .sharebtn i{
+.likebtn i,
+.sharebtn i {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -1128,11 +1170,11 @@ i.fas {
   background-color: #eee;
 }
 
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #0000ff;
 }
 
@@ -1142,7 +1184,7 @@ i.fas {
   display: none;
 }
 
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -1167,14 +1209,14 @@ i.fas {
 }
 
 
-   /* Dropdown Button */
+/* Dropdown Button */
 .dropbtn:after {
   color: white;
   border: none;
   cursor: pointer;
   content: '\2807';
   font-size: 30px;
-   right: 60px;
+  right: 60px;
 }
 
 .dropbtn {
@@ -1186,7 +1228,8 @@ i.fas {
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover,
+.dropbtn:focus {
   background-color: none;
 }
 
@@ -1203,7 +1246,7 @@ i.fas {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   bottom: 20px;
   overflow: visible !important;
@@ -1212,7 +1255,7 @@ i.fas {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color:#0000ff;
+  color: #0000ff;
   padding: 5px 5px;
   text-decoration: none;
   display: block;
@@ -1220,10 +1263,14 @@ i.fas {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {
+  background-color: #ddd
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;} 
+.show {
+  display: block;
+}
 
 
 .carousel-item .dropbtn:after {
@@ -1231,23 +1278,23 @@ i.fas {
   font-size: 30px;
 }
 
-.carousel-item  .btn-group {
+.carousel-item .btn-group {
   top: 2px;
   border: none;
   text-decoration: none !important;
 }
 
-.carousel-item .dropdown-content{
+.carousel-item .dropdown-content {
   bottom: 40px;
   min-width: 100px;
 }
 
 .shareto {
-  position:fixed;
-  top:auto;
-  right:auto;
-  left:auto;
-  bottom:0;
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: 0;
   background-color: #fff;
   text-decoration: none;
 }
@@ -1266,57 +1313,86 @@ i.fas {
 }
 
 .shareto .modal-header {
-  border: 0px ;
+  border: 0px;
 }
 
-.insights h3{
+.insights h3 {
   color: #fff;
   font-family: gilroy-regular;
   font-size: 16px;
-  padding: 0px !important; 
+  padding: 0px !important;
   margin: 0px;
   font-weight: lighter;
 }
 
-.insights h2{
+.insights h2 {
   color: #fff;
   font-family: gilroy-black;
-font-size: 18px;
-text-align: left;
-text-transform: uppercase;
-margin-bottom: 0px;
-margin-top: 12px;
+  font-size: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 12px;
 }
 
-.insights p{
+
+.insights p {
   color: #fff;
   font-family: gilroy-regular;
   font-size: 15px;
-  padding: 0px !important; 
+  padding: 0px !important;
   margin: 0px;
   font-weight: lighter;
 }
+
 
 .track input {
   background-color: rgb(231, 231, 231);
   width: 100%;
   border: none;
-  padding:10px;
+  padding: 10px;
   outline: none;
 }
 
-.track input::placeholder{
- color: #0000ff;
- font-size: 14px;
+.track input::placeholder {
+  color: #0000ff;
+  font-size: 12px;
 }
 
 .track h3 {
   margin: 0px;
-  margin-top:15px;
   width: 100%;
 }
 
-.track #ui-id-1-button {
+.track .ui-selectmenu-button {
   background-color: rgb(231, 231, 231) !important;
-  padding:10px;
+  padding: 10px;
+}
+
+.track .ui-selectmenu-text {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.track .ui-menu-item-wrapper {
+  font-size: 12px !important;
+}
+
+.trackbtn {
+  background-color: #0000ff;
+  color: #fff !important;
+  border: 0px;
+  font-family: gilroy-black;
+  text-decoration: none !important;
+  border: 0px !important;
+  font-size: 20px;
+  padding: 0px 15px 0px 15px;
+  cursor: pointer;
+}
+
+.socialfunction img {
+  max-width: 35%;
+  height: auto;
 }
